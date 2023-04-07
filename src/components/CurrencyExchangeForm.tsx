@@ -168,6 +168,10 @@ const CurrencyExchangeForm: React.FC = () => {
 
           {isLoading && <p className={classes["form-loading"]}>Loading...</p>}
 
+          {error && (
+            <p className={classes["form-error"]}>Something went wrong</p>
+          )}
+
           {exchnageCalculation && !isLoading && (
             <div className={classes["form-result"]}>{exchnageCalculation}</div>
           )}

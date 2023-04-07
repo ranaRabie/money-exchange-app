@@ -89,6 +89,9 @@
   .form-loading {
     flex: 0 0 100%;
   }
+  .form-error {
+    color: red;
+  }
   .form-reset {
     button {
       cursor: pointer;

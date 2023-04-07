@@ -53,7 +53,7 @@ const CurrencyDropdown: React.FC<CurrencyDropdownProps> = ({
             </option>
           ))}
       </select>
-      {error && (
+      {error && !isLoading && (
         <p className={classes["dropdown-error"]}>Something went wrong</p>
       )}
     </>
