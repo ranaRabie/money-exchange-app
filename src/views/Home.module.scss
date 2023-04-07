@@ -1,0 +1,27 @@
+.app-pg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  background-color: #111;
+  background-image: url("../../public/BG.jpg");
+  background-size: cover;
+  color: #fff;
+  &::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(48, 88, 157, 0.85);
+  }
+  h1 {
+    margin-bottom: 3rem;
+    text-transform: capitalize;
+    font-size: 3rem;
+    position: relative;
+  }
+}
