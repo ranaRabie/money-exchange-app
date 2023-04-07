@@ -26,6 +26,7 @@ const CurrencyExchangeForm: React.FC = () => {
     useState<{} | null>(null);
   const [isLoading, result, error] = useFetch(currencyExchangeAPIOptions);
 
+  /* eslint-disable */
   useEffect(() => {
     setSelectedCurrency([formState.to, formState.from]);
 
