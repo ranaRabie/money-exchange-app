@@ -144,7 +144,11 @@ const CurrencyExchangeForm: React.FC = () => {
             </div>
             {exchnageCalculation && (
               <div className={classes["form-exchange"]}>
-                <a role="button" onClick={onExchangeCurrencyHandle}>
+                <a
+                  role="button"
+                  title="exchange"
+                  onClick={onExchangeCurrencyHandle}
+                >
                   <img src="./exchange-icon.svg" />
                 </a>
               </div>
@@ -163,7 +167,9 @@ const CurrencyExchangeForm: React.FC = () => {
         <div className={classes["form-footer"]}>
           {exchnageCalculation && !isLoading && (
             <div className={classes["form-reset"]}>
-              <button onClick={onResetFormHandle}>reset</button>
+              <button title="reset" onClick={onResetFormHandle}>
+                reset
+              </button>
             </div>
           )}
 
@@ -174,7 +180,9 @@ const CurrencyExchangeForm: React.FC = () => {
           )}
 
           {exchnageCalculation && !isLoading && (
-            <div className={classes["form-result"]}>{exchnageCalculation}</div>
+            <div title="result" className={classes["form-result"]}>
+              {exchnageCalculation}
+            </div>
           )}
         </div>
       </form>

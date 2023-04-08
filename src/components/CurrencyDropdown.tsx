@@ -48,6 +48,7 @@ const CurrencyDropdown: React.FC<CurrencyDropdownProps> = ({
               key={idx}
               value={curr}
               disabled={true ? selectedCurrency.includes(curr) : false}
+              title="currency-option"
             >
               {curr}
             </option>
